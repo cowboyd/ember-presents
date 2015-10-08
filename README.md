@@ -1,25 +1,51 @@
-# Ember-presents
+# Ember Presents!
 
-This README outlines the details of collaborating on this Ember addon.
+Interactive, Extensible, Web-Based Slide Decks Made Easy.
 
-## Installation
+## Because Your Slide Deck Is Software Too
 
-* `git clone` this repository
-* `npm install`
-* `bower install`
+Sometimes your slides are more than a static set of
+pictures. They weave a uniform narrative from foundational text and
+germaine images, combined with living pictures that act out your point
+in real time.
 
-## Running
+Crafting your slides with an HTML based presentation package such as
+[Reveal.js][1] has the distinct advantage of making your deck an
+HTML5 application, which means breathing as much life as you can code
+into each slide. However, just building it from a static HTML page
+and isn't enough.
 
-* `ember server`
-* Visit your app at http://localhost:4200.
+Ember Presents! takes the presentation-as-application concept to the
+next level by allowing you to treat your presentation as a
+full-fledged piece of modular software.
 
-## Running Tests
+## No More Forking, Copying, Cutting and/or Pasting!
 
-* `ember test`
-* `ember test --server`
+Themes, clip-art, stockpiles of shared slides, even `ember-presents`
+itself are bundled as NPM packages which are installed, uninstalled
+and upgraded as self-contained units with zero changes to
+your presentation's codebase.
 
-## Building
+## Can I use Angular, React, or Some Other JS Library?
 
-* `ember build`
+__Yes!__ That's the point! If it can be bundled in an NPM package, then it
+can be included in your slides. Ember Presents! drives the slide
+transitions and the command line tooling, but the content of each
+slide is an application unto itself.
 
-For more information on using ember-cli, visit [http://www.ember-cli.com/](http://www.ember-cli.com/).
+## Getting Started
+
+Creating an application with Ember Presents! is a snap. All you need
+is a recent version of npm.
+
+```
+$ npm install -g ember-presents
+$ ember presentation cool-prezzie
+$ cd cool-prezzie
+$ npm start
+Serving on [http://localhost:4200/](http://localhost:4200)
+```
+
+
+
+[1]: http://slide.es
