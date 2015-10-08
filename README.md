@@ -43,7 +43,7 @@ $ npm install -g ember-presents
 $ ember presentation cool-prezzie
 $ cd cool-prezzie
 $ npm start
-Serving on [http://localhost:4200/](http://localhost:4200)
+Serving on http://localhost:4200/
 ```
 
 
