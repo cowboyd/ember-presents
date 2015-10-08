@@ -11,9 +11,9 @@ in real time.
 
 Crafting your slides with an HTML based presentation package such as
 [Reveal.js][1] has the distinct advantage of making your deck an
-HTML5 application, which means breathing as much life as you can code
+HTML5 application. It means breathing as much life as you can code
 into each slide. However, just building it from a static HTML page
-and isn't enough.
+and some ad-hoc JavaScript isn't enough.
 
 Ember Presents! takes the presentation-as-application concept to the
 next level by allowing you to treat your presentation as a
