@@ -48,4 +48,4 @@ Serving on http://localhost:4200/
 
 
 
-[1]: http://slide.es
+[1]: http://slid.es
