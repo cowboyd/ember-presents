@@ -1,5 +1,7 @@
 # Ember Presents!
 
+[![Build Status](https://travis-ci.org/cowboyd/ember-presents.svg?branch=master)](https://travis-ci.org/cowboyd/ember-presents)
+
 Interactive, Extensible, Web-Based Slide Decks Made Easy.
 
 ## Because Your Slide Deck Is Software Too
