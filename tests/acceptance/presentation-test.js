@@ -20,7 +20,26 @@ describe('Acceptance: Presentation', function() {
       expect(currentPath()).to.equal('presentation.slide');
     });
     it("contains the the-first-slide.hbs content", function() {
-      expect($('.spec-the-first-slide-title')).to.have.text('Slide One');
+      expect($('.spec-the-first-slide-title')).to.have.text('Ember Presents!');
     });
+    describe("hitting the left arrow", function() {
+      beforeEach(function() {
+        keyEvent(window, 'keydown', 37);
+        keyEvent(window, 'keyup', 37);
+      });
+      it("remains on the first slide", function() {
+        expect($('.spec-the-first-slide-title')).to.have.text('Ember Presents!');
+      });
+    });
+    describe("hitting the right arrow", function() {
+      beforeEach(function() {
+        keyEvent(window, 'keydown', 39);
+        keyEvent(window, 'keyup', 39);
+      });
+      it("transitions to the seconds slide", function() {
+        expect($('.spec-the-second-slide-title')).to.have.text('Is This a Good Idea?');
+      });
+    });
+
   });
 });
