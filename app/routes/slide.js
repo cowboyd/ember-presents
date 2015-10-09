@@ -3,8 +3,7 @@ import presentation from '../presentation';
 
 export default Ember.Route.extend({
   model: function(params) {
-    let descriptor = presentation.find((item)=> item === params.id);
-    if (!descriptor) {
+    if (presentation.indexOf(params.id) < 0) {
       throw new Error(`unknown slide: ${params.id}`);
     }
     return {
