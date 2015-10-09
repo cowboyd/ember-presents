@@ -46,6 +46,22 @@ $ npm start
 Serving on http://localhost:4200/
 ```
 
+You can now navigate to [http://localhost:4200][2]
+and see your slide deck running!
+
+Once you're up and running, it's time to generate your first slide. To
+do this, you use builtin slide generator:
+
+```js
+ember generate slide my-very-first-slide
+```
+
+This will put your brand new slide in
+`app/slides/my-very-first-slide.hbs`.
+
+
+
 
 
 [1]: http://slid.es
+[2]: http://localhost:4200
