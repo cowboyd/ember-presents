@@ -11,7 +11,6 @@
     "ember-mocha": "~0.8.0"
   },
   "devDependencies": {
-    "chai-jquery": "~2.0.0",
-    "ember-data": "1.13.8"
+    "chai-jquery": "~2.0.0"
   }
 }
