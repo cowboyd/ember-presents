@@ -6,6 +6,7 @@ let $ = Ember.$;
 export default Ember.Route.extend({
   model(params) {
     var index = presentation.indexOf(params.id);
+
     if (index < 0) {
       throw new Error(`unknown slide: ${params.id}`);
     }
@@ -17,6 +18,11 @@ export default Ember.Route.extend({
 
   move(distance) {
     let currentIndex = this.get('controller.model.index');
+
+    if(!presentation[currentIndex + distance]) {
+      return;
+    }
+
     this.transitionTo('slide', presentation[currentIndex + distance]);
   },
 

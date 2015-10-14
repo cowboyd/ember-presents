@@ -29,6 +29,7 @@ describe('Acceptance: Presentation', function() {
       });
       it("remains on the first slide", function() {
         expect($('.spec-the-first-slide-title')).to.have.text('Ember Presents!');
+        expect(currentURL()).to.equal('/ember-presents');
       });
     });
     describe("hitting the right arrow", function() {
@@ -36,9 +37,27 @@ describe('Acceptance: Presentation', function() {
         keyEvent(window, 'keydown', 39);
         keyEvent(window, 'keyup', 39);
       });
+
       it("transitions to the seconds slide", function() {
         expect($('.spec-the-second-slide-title')).to.have.text('Is This a Good Idea?');
       });
+
+    });
+
+    describe("loading the last slide and hitting the right arrow", function() {
+      beforeEach(function() {
+        return visit('that-means-ember');
+      });
+
+      beforeEach(function() {
+        keyEvent(window, 'keydown', 39);
+        keyEvent(window, 'keyup', 39);
+      });
+
+      it("doesn't advance slides", function() {
+        expect(currentURL()).to.equal('that-means-ember');
+      });
+
     });
 
   });
