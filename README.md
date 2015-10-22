@@ -37,14 +37,12 @@ slide is an application unto itself.
 
 ## Getting Started
 
-Creating an application with Ember Presents! is a snap. All you need
-is a recent version of npm.
+Creating an application with Ember Presents! is a snap, all you have to .
 
 ```
-$ npm install -g ember-presents
-$ ember presentation cool-prezzie
+$ ember new cool-prezzie
 $ cd cool-prezzie
-$ npm start
+$ ember install ember-presents
 Serving on http://localhost:4200/
 ```
 
@@ -59,10 +57,12 @@ ember generate slide my-very-first-slide
 ```
 
 This will put your brand new slide in
-`app/slides/my-very-first-slide.hbs`.
+`app/slides/my-very-first-slide.hbs` and add it to your `presentation.json` file.
 
+### Presentation.json
 
-
+This is a manifest of all your slides. At the moment, it's just a
+straight-up list of slide titles that determine the order.
 
 
 [1]: http://slid.es
