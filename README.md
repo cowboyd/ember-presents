@@ -43,6 +43,7 @@ Creating an application with Ember Presents! is a snap, all you have to .
 $ ember new cool-prezzie
 $ cd cool-prezzie
 $ ember install ember-presents
+$ ember server
 Serving on http://localhost:4200/
 ```
 
