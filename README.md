@@ -43,6 +43,7 @@ Creating an application with Ember Presents! is a snap, all you have to .
 $ ember new cool-prezzie
 $ cd cool-prezzie
 $ ember install ember-presents
+$ ember server
 Serving on http://localhost:4200/
 ```
 
@@ -57,7 +58,9 @@ ember generate slide my-very-first-slide
 ```
 
 This will put your brand new slide in
-`app/slides/my-very-first-slide.hbs` and add it to your `presentation.json` file.
+`app/slides/my-very-first-slide.hbs` and add it to your
+`presentation.json` file. You can check it out on
+[http://localhost:4200/my-very-first-slide](http://localhost:4200/my-very-first-slide)
 
 ### Presentation.json
 
