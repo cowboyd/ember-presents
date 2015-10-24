@@ -1,5 +1,6 @@
 var fs = require('fs');
 var path = require('path');
+var String = require('string');
 
 module.exports = {
   description: 'Generates a new presentation slide',
@@ -14,5 +15,18 @@ module.exports = {
     json.push(options.entity.name);
 
     fs.writeFileSync(fileName, JSON.stringify(json, null, 2));
+  },
+
+  locals: function(options) {
+    var name = String(options.entity.name).humanize().titleCase().s;
+
+    return {
+      normalizedName: name
+    };
+  },
+
+  normalizeEntityName: function(entityName) {
+    return String(entityName).dasherize().s;
   }
-};
+
+}
